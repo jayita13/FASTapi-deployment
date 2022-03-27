@@ -32,7 +32,6 @@ def predict_diabetes(data: Diabetes):
     bmi = data['BMI']
     dpf = data['DiabetesPedigreeFunction']
     age = data['Age']
-   # print(classifier.predict([[variance,skewness,curtosis,entropy]]))
     prediction = classifier.predict([[pregnancy, glucose, bloodpressure, skinthickness, insulin, bmi, dpf, age]])
     if(prediction[0]>0.5):
         prediction = "Not Diabetic"
