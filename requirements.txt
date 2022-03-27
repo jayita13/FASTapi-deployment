@@ -7,4 +7,5 @@ fastapi
 uvicorn
 gunicorn
 starlette
-python-multipart
+uvloop
+httptools
